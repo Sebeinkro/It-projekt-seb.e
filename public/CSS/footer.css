@@ -1,0 +1,33 @@
+@import './main.css';
+/*
+    FOOTER STYLING
+*/
+
+footer {
+    width: 100vw;
+    background-color: var(--tertary-color);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 2em;
+}
+
+.linking {
+    display: flex;
+    gap: 5em;
+}
+
+.linking > div {
+    gap: .75em;
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 3em;
+    }
+}

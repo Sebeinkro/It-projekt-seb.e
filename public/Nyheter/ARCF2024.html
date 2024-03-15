@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyhets side ARC F2024</title>
+    <link rel="stylesheet" href="../CSS/helperStyles.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/burger.css">
+	<link rel="stylesheet" href="../CSS/footer.css">
+	<link rel="stylesheet" href="../CSS/slideShowProdukt.css">
+</head>
+<body>
+		<!-- Bruker denne nyhets siden med notat. -->
+        <!-- Her som i de andre Navbar / burger. -->
+    <div id="navbar" class="navbar make-flex-row">
+        <a class="nav-link-button" href="../index.html">
+            <picture class="hovedLogo">
+                <img loading="lazy" src="../../Assets/ARC_transparent_small.png"  alt="Logo" height="100%" width="100%" min-width="50px" min-height="30px">
+            </picture>
+        </a>
+        <nav class="nav-links" id="nav-menu">
+            <ul class="make-flex-row">
+                <li class="nav-link-button"><a href="../butikk.html">Butikk</a></li>
+                <li class="nav-link-button"><a href="../news.html">Nyheter</a></li>
+                <li class="nav-link-button"><a href="../faq_contact.html">FAQ og kontakt</a></li>
+                <li class="nav-link-button"><a href="../about_us.html">Om oss</a></li>
+                <li class="nav-link-button"><a href="../presentasjon.html">Presentasjon</a></li>
+                
+            </ul>
+        </nav>
+        <div id="menuToggle">
+              <input type="checkbox" />
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="../butikk.html"><li>Butikk</li></a>
+                <a href="../news.html"><li>nyheter</li></a>
+                <a href="../faq_contact.html"><li>FAQ og kontakt</li></a>
+                <a href="../about_us.html"><li>Om oss</li></a>
+                <a href="../presentasjon.html"><li>Presentasjon</li></a>
+              </ul>
+        </div>
+    </div> 		<!-- Her er da hovedinhoolden hvor først kommer tittelen, datoen og underoverskriften. Deretter ett bilde og tekst. -->
+    <main class="newsArticlePage">
+        <h1>ARC Formula 2024 ute!</h1>
+        <h3>ARC Formula 2024 bilen er nå ute for salg.</h3>
+        <p class="dato">02/29/24</p>
+        <img loading="lazy" src="../../Assets/F1_angle2.jpg"  alt="ARC Formula 2024 Angle 2" height="60%" width="60%">
+        <p>ARC Formel 2024 er vår nyeste bil med performance som første krav. Laget etter BIA Formel reglmanget. Den vil gi deg den meste ralistiske Formel opplevelsen i Assetto Corsa med mange nye innovasjoner innenfor modding!</p>
+        <p></p>
+        <table class="table"> 		<!-- Her er da et table som sammenligner de 3 bilene hvor den bilen det gjelder er hilighta.-->
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>ARC 3</th>
+                    <th>ARC 2</th>
+                    <th class="tableActive">ARC Formula 2024</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vekt</td>
+                    <td>690kg</td>
+                    <td>750kg</td>
+                    <td class="tableActive">807kg</td>
+                </tr>
+                <tr>
+                    <td>Motor</td>
+                    <td>3.6L V6</td>
+                    <td>3.6L V6 Turbo</td>
+                    <td class="tableActive">1.6L V6 Turbo + ERS</td>
+                </tr>
+                <tr>
+                    <td>Effekt</td>
+                    <td>~390Hp</td>
+                    <td>~620Hp</td>
+                    <td class="tableActive">1020Hp+</td>
+                </tr>
+                <tr>
+                    <td>0-100km/h</td>
+                    <td>3.0s</td>
+                    <td>2.6s</td>
+                    <td class="tableActive">2.0s</td>
+                </tr>
+                <tr>
+                    <td>Toppfart</td>
+                    <td>270km/h</td>
+                    <td>320km/h</td>
+                    <td class="tableActive">350km/h</td>
+                </tr>
+                <tr>
+                    <td>Runde Tid</td>
+                    <td>1:34.480</td>
+                    <td>1:31.726</td>
+                    <td class="tableActive">1:19.358</td>
+                </tr>
+            </tbody>
+        </table>         <!-- Her er da en videoer som viser bilen i aksjon. -->
+        <video autoplay loop preload="none" width="60%" height="60%">
+            <source src="../../Assets/ARC Formula 2024 Hotlap.mp4" type="video/mp4">
+            <p class="error">Video unsupported by browser</p>
+       </video> <!-- Og her en video som viser en comparison mellom de 3 bilene. -->
+       <p>Sammenligning mellom Alle ARC bilene så langt!</p>
+       <video autoplay muted loop preload="none" width="60%" height="60%">
+        <source src="../../Assets/ARC multilap.mp4" type="video/mp4">
+        <p class="error">Video unsupported by browser</p>
+   </video>
+    </main>
+	<footer><!-- Normal footer. --> 
+		<div class="linking">
+			<div class="footer-navgation make-flex-col">
+				<a href="https://discord.gg/aHHfre3jdg">Discord</a>
+				<a href="">Twitter</a>
+				<a href="">Instagram</a>
+				<a href="">Youtube</a>
+        		<a href="https://twitch.tv/sebeinkro">Twitch</a>
+			</div>
+			<div class="footer-socialhandles make-flex-col">
+				<a href="../faq_contact.html">FAQ og kontakt</a>
+				<a href="../about_us.html">Om oss</a>
+				<a href="">Support</a>
+				<a href="">Terms of Service</a>
+        		<a href="">Cookie policy</a>
+			</div>
+		</div>
+        <p>© 2024 ARC. All rights reserved.</p>
+	</footer>
+</body>
+<script src="../../src/slikdeShowProdukt.js"></script>
+<script src="../../src/shopTab.js"></script>
+</html>

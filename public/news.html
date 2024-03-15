@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyheter side</title>
+    <link rel="stylesheet" href="CSS/helperStyles.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/burger.css">
+	<link rel="stylesheet" href="CSS/footer.css">
+	<link rel="stylesheet" href="./CSS/hero.css">
+</head>
+<body>
+            <!-- Veldig like butikk som sagt, bare litt annen styling html nær prikk lik.-->
+            <!-- Navbar -->
+    <div id="navbar" class="navbar make-flex-row">
+        <a class="nav-link-button" href="index.html">
+            <picture class="hovedLogo">
+                <img loading="lazy" src="../Assets/ARC_transparent_small.png"  alt="Logo" height="100%" width="100%" min-width="50px" min-height="30px">
+            </picture>
+        </a>
+        <nav class="nav-links" id="nav-menu">
+            <ul class="make-flex-row">
+                <li class="nav-link-button"><a href="butikk.html">Butikk</a></li>
+                <li class="nav-link-button"><a href="news.html">Nyheter</a></li>
+                <li class="nav-link-button"><a href="faq_contact.html">FAQ og kontakt</a></li>
+                <li class="nav-link-button"><a href="about_us.html">Om oss</a></li>
+                <li class="nav-link-button"><a href="presentasjon.html">Presentasjon</a></li>
+                
+            </ul>
+        </nav>
+        <div id="menuToggle">
+              <input type="checkbox" />
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="butikk.html"><li>Butikk</li></a>
+                <a href="news.html"><li>nyheter</li></a>
+                <a href="faq_contact.html"><li>FAQ og kontakt</li></a>
+                <a href="about_us.html"><li>Om oss</li></a>
+                <a href="presentasjon.html"><li>Presentasjon</li></a>
+              </ul>
+        </div>
+    </div> <!-- hovedinnhold for nyheter-->
+    <main class="news">
+        <div class="news-flex">
+            <div class="news-article">
+                <a class="newsLink" href="Nyheter/ARCF2024.html">
+                    <img class="newspicture" src="../Assets/F1_angle1.jpg" alt="Bilde av ARC F2024" width="auto">
+                </a>
+                <h2>ARC Formula 2024 Vår nyeste bil ute NÅ!</h2>
+                <a href="Nyheter/ARCF2024.html">Les mer!</a>
+            </div>
+            <div class="news-article">
+                <a class="newsLink" href="Nyheter/ARC2.html">
+                    <img class="newspicture" src="../Assets/F2_angle2.jpg" alt="Bilde av ARC 2">
+                </a>
+                <h2>ARC 2 UTE NÅ!</h2>
+                <a href="Nyheter/ARC2.html">Les mer!</a>
+            </div>
+            <div class="news-article">  
+                <a class="newsLink" href="Nyheter/ARC3.html">
+                    <img class="newspicture" src="../Assets/F3_angle3.jpg" alt="Bilde av ARC 3">
+                </a>
+                <h2>ARC 3 UTE NÅ!</h2>
+                <a href="Nyheter/ARC3.html">Les mer!</a>
+            </div>
+        </div>
+    </main>
+	<footer>    <!-- Footer-->
+		<div class="linking">
+			<div class="footer-navgation make-flex-col">
+				<a href="https://discord.gg/aHHfre3jdg">Discord</a>
+				<a href="">Twitter</a>
+				<a href="">Instagram</a>
+				<a href="">Youtube</a>
+        		<a href="https://twitch.tv/sebeinkro">Twitch</a>
+			</div>
+			<div class="footer-socialhandles make-flex-col">
+				<a href="faq_contact.html">FAQ og kontakt</a>
+				<a href="about_us.html">Om oss</a>
+				<a href="">Support</a>
+				<a href="">Terms of Service</a>
+        		<a href="">Cookie policy</a>
+			</div>
+		</div>
+        <p>© 2024 ARC. All rights reserved.</p>
+	</footer>
+</body>
+</html>

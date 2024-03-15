@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoved side</title>
+    <link rel="stylesheet" href="CSS/helperStyles.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/burger.css">
+	<link rel="stylesheet" href="CSS/footer.css">
+	<link rel="stylesheet" href="CSS/hero.css">
+</head>
+<body>
+<!-- Hei ivar, mange av sidene mine er like og derfor føler jeg det er unødvendig og kommtere alt på alle som f.eks navbar, footer, 
+	(butikk/nyhets sidene er neste helt like), MEN alltid 1 vil ha og de andre da være veldig like med forskjellig tekst. 
+PS: Jeg vet at CSS er litt messy (ikke optimalt for å si det sånnn)
+-->
+	
+	<!-- Er videoen som kommer under åpning (Forbedring ville vært  aat den bare åpner på første gang) -->
+	<div id="splash-screen" class="make-main-object">
+		<video autoplay muted loop preload="none" width="100%" height="100%">
+            <source src="../Assets/ARC_logo_animation.mp4" type="video/mp4">
+            <p class="error">Video unsupported by browser</p>
+       </video>
+	</div>
+		<!-- Her er navbaren og inkluderer hele diven.  -->
+    <div id="navbar" class="navbar make-flex-row">
+        <a class="nav-link-button" href="index.html">
+            <picture class="hovedLogo">
+                <img loading="lazy" src="../Assets/ARC_transparent_small.png"  alt="Logo" height="100%" width="100%">
+            </picture>
+        </a>
+        <nav class="nav-links" id="nav-menu">
+            <ul class="make-flex-row"> <!-- Jeg vet dette kommer feil på i w3 validator, men e har skjekka at det fungerer fint og e klare ikke finne d som e feil.-->
+                <li class="nav-link-button"><a href="butikk.html">Butikk</a></li>
+                <li class="nav-link-button"><a href="news.html">Nyheter</a></li>
+                <li class="nav-link-button"><a href="faq_contact.html">FAQ og kontakt</a></li>
+                <li class="nav-link-button"><a href="about_us.html">Om oss</a></li>
+                <li class="nav-link-button"><a href="presentasjon.html">Presentasjon</a></li>     
+            </ul>
+        </nav>
+			<!-- Her er burger menuen av navbaren -->
+        <div id="menuToggle">
+              <input type="checkbox" />
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="butikk.html"><li>Butikk</li></a>
+                <a href="news.html"><li>nyheter</li></a>
+                <a href="faq_contact.html"><li>FAQ og kontakt</li></a>
+                <a href="about_us.html"><li>Om oss</li></a>
+                <a href="presentasjon.html"><li>Presentasjon</li></a>
+              </ul>
+        </div>
+    </div>
+			<!-- Hewr er slideshowet og javascripet er slideShow.js Denne er da automatisk hvert 5s sekund, men kan også bli brukt manuelt.-->
+    <header class="hero">
+		<div class="slideshow-container">
+			<div class="slide-element mySlides make-fullscreen">
+				<div class="slide-island make-flex-col"> <!-- Hver av disse er hvert bilde / side av slideshowet.-->
+					<h2>ARC Formula 2024</h2> 
+					<p>
+           				 ARC Formula 2024 er en Formel bil basert på 2024 sesongen av Formel 1. Det er den ultimate bilen med performance og fart. Den er laget med FIA Formel 1 reglemanget i tankene, og er en av de mest teknologiske bilene for Assetto Corsa. 
+					</p>
+					<a href="Nyheter/ARCF2024.html">Flere detaljer</a>
+				  </div>
+			  <img class="make-cover make-fullscreen" src="../Assets/F1_angle3.jpg" alt="ARC Formula 2024">
+			  
+			</div>
+		
+			<div class="slide-element  mySlides make-fullscreen">
+				<div class="slide-island make-flex-col">
+					<h2>ARC 2</h2>
+					<p>
+            			ARC 2 er laget basert på dallara f2/18 med liveries fra ekte sesonger. Den er laget etter FIA Formel 2 reglemanget og er den beste modden for Assetto Corsa.
+					</p>
+					<a href="Nyheter/ARC2.html">Flere detaljer</a>
+				</div>
+			  	<img class="make-cover make-fullscreen"  src="../Assets/F2_angle1.jpg" alt="ARC 2">
+			</div>
+		
+			<div class="slide-element  mySlides make-fullscreen">
+				<div class="slide-island make-flex-col">
+					<h2>ARC 3</h2>
+					<p>
+            			ARC 3 er laget basert på dallara f3/19 med liveries fra ekte sesonger. Den er laget etter FIA Formel 3 reglemanget, med en model av høyeste kvalitet og er så realistisk som mulig i Assetto Corsa. 
+					</p>
+					<a href="Nyheter/ARC3.html">Flere detaljer</a>
+				  </div>
+			  <img class="make-cover make-fullscreen" src="../Assets/F3_angle2.jpg" alt="ARC 2">
+			  
+			</div>
+		</div>
+		<br>
+		<div class="slideshow-controls">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+    </header>
+				<!-- Her er da footeren som er på alle sider (samme ned navbar)-->
+	<footer>
+		<div class="linking"> 			<!-- Her er da row 1 og ja mange av linkene er ikke fylt fordi jeg gidder ikke å lage JS til å åpne et element eller lage html dokument til dette projektet. PLus sosiale medier linker har jeg ikke alle.-->
+			<div class="footer-navgation make-flex-col">
+				<a href="https://discord.gg/aHHfre3jdg">Discord</a>
+				<a href="">Twitter</a>
+				<a href="">Instagram</a>
+				<a href="https://www.youtube.com/channel/UCGI8ezCNwfTaIbOEu0FLf7w?view_as=subscriber">Youtube</a>
+        		<a href="https://twitch.tv/sebeinkro">Twitch</a>
+			</div> <!-- og her da row 2-->
+			<div class="footer-socialhandles make-flex-col">
+				<a href="faq_contact.html">FAQ og kontakt</a>
+				<a href="about_us.html">Om oss</a>
+				<a href="">Support</a>
+				<a href="">Terms of Service</a>
+        		<a href="">Cookie policy</a>
+			</div>
+		</div> <!-- Må alltid ha copyright -->
+        <p>© 2024 ARC. All rights reserved.</p>
+	</footer>
+</body>
+		<!-- Import av javascript det kommer også en feil i w3 schools validator her for ingen grunn. Christian så på også det den tror det er en salgs "ghost" <script> tag som ikke er der.-->
+<script src="../src/slideShow.js"></script>
+<script src="../src/index.js"></script>
+</html>

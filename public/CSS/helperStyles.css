@@ -1,0 +1,61 @@
+/*
+    STANDARD STYLES (generele styles som blir brukt ofte)
+*/
+
+.make-flex-row {
+    display: flex;
+}
+
+.make-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-children {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.make-fullscreen {
+    width: 100%;
+    height: 100%;
+}
+
+.make-cover {
+    object-fit: cover;
+}
+
+.hovedInnhold {
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.make-main-object {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 99999999;
+}
+
+/* gjør ryddig */
+.make-main-object > video {
+    object-fit: cover;
+}
+
+.hidden {
+    animation: hide-element .5s linear forwards;
+}
+
+@keyframes hide-element {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}

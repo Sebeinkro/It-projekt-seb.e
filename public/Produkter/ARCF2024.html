@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt ARC 1 2024 side</title>
+    <link rel="stylesheet" href="../CSS/helperStyles.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/burger.css">
+	<link rel="stylesheet" href="../CSS/footer.css">
+	<link rel="stylesheet" href="../CSS/slideShowProdukt.css">
+</head>
+<body>		<!-- Bruker denne butikk siden med notat. -->
+ 			<!-- Her er burger menuen av navbaren -->
+    <div id="navbar" class="navbar make-flex-row">
+        <a class="nav-link-button" href="../index.html">
+            <picture class="hovedLogo">
+                <img loading="lazy" src="../../Assets/ARC_transparent_small.png"  alt="Logo" height="100%" width="100%" min-width="50px" min-height="30px">
+            </picture>
+        </a>
+        <nav class="nav-links" id="nav-menu">
+            <ul class="make-flex-row">
+                <li class="nav-link-button"><a href="../butikk.html">Butikk</a></li>
+                <li class="nav-link-button"><a href="../news.html">Nyheter</a></li>
+                <li class="nav-link-button"><a href="../faq_contact.html">FAQ og kontakt</a></li>
+                <li class="nav-link-button"><a href="../about_us.html">Om oss</a></li>
+                <li class="nav-link-button"><a href="../presentasjon.html">Presentasjon</a></li>
+                
+            </ul>
+        </nav>
+        <div id="menuToggle">
+              <input type="checkbox" />
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="../butikk.html"><li>Butikk</li></a>
+                <a href="../news.html"><li>nyheter</li></a>
+                <a href="../faq_contact.html"><li>FAQ og kontakt</li></a>
+                <a href="../about_us.html"><li>Om oss</li></a>
+                <a href="../presentasjon.html"><li>Presentasjon</li></a>
+              </ul>
+        </div>
+    </div> 			<!-- Dette er hvor selve butikken starter. Som index starter den med en slideshow, denne ganger bare manuel. Denne bruker derfor en annen JS slideShowPdrodukt, de er veldig like derimot. -->
+    <main class="shop">
+        <div class="shopPage">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade"> 			<!-- Hver bilde med sine numre definert.-->
+                  <div class="numbertext">1 / 3</div>
+                  <img src="../../Assets/F1_angle1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="../../Assets/F1_angle2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="../../Assets/F1_angle3.jpg" style="width:100%">
+                </div>
+                 			<!-- Pilene for å forandre side.-->
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                 			<!-- Dottene for å forandre side. -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div> 			<!-- Her er da selve "butikken" med en tittel pris og en knapp for skjøping.-->
+                <div class="produktKjøp">
+                    <h1>ARC Formula 2024</h1>
+                    <p>Pris: 50kr</p>
+                    <button class="buy-button">Kjøp</button>
+
+                </div> 			<!-- Dette er litt spesielt. En meny for informasjon om produktet. Det er spesifikasjoner, Egenskaper og Versjoner.-->
+                    <div class="tab"> 			<!-- Dette er da en del av JS som åpner en ny og lukker den andre med knapper. -->
+                      <button class="tablinks" onclick="openTab(event, 'Spesifications')">Spesifikasjoner</button>
+                      <button class="tablinks" onclick="openTab(event, 'Features')">Features</button>
+                      <button class="tablinks" onclick="openTab(event, 'Versjoner')">Versjoner</button>
+                  </div>
+              			<!-- Under her er all informasjonen for hver side definert.-->
+                  <div id="Spesifications" class="tabcontent">
+                      <h2>Spesifikasjoner</h2>
+                      <br>
+                      <p>ARC 2024-bilen er den beste Assetto Corsa-modden vi noen gang har laget. Laget for å være under FIA Formel 1-regelverket og med den beste teknologien for Assetto Corsa-modding, vil dette gi den beste kjøreopplevelsen vi har klart så langt</p>
+                      <br>
+                      <p>Chassis: ARC Formula 2024</p>
+                      <p>Vekt: 807kg</p>
+                      <p>Motor: 1.6L V6 Turbo</p>
+                      <p>Drivstoff: 10% Bio Fuel</p>
+                      <p>Effekt: 1030hk</p>
+                      <p>Drivstofforbruk: 35L/100km</p>
+                      <p>0-100km/t: 2.0s</p>
+                      <p>Toppfart: 350km/t</p>
+                  </div>
+              
+                  <div id="Features" class="tabcontent">
+                      <h2>Egenskaper</h2>
+                      <br>
+                      <p>ARC 2024 har mange brytende nye Features som er aldri dett før på Assetto Corsa. Den er så avansert den har en Manual som komemr med nedlastningen!</p>
+                      <br>
+                      <p>ARC 2024 har en Motor som må startes manuelt med hjulet.</p>
+                      <br>
+                      <p>Den har mulighet til å "stalles" hvis RPMen blir for lav vil den starte Antistall, men om det skjer for raskt vil den stalle.</p>
+                      <br>
+                      <p>Den har 3 forkjellige AREO packages eller kits som er realistiske. I tillegg til muligheten å endre frontvingen litt og legge til Gurney Flaps.</p>
+                      <br>
+                      <p>ARC 2024 har DRS som er tuened til å virke som i virkeligheten hvor hver AREO package fungerer forkjellig.</p>
+                      <br>
+                      <p>ARC 2024 har et veldig avansert ERS system som er likt det man har i virkeligheten. Man kan justere ERS bruke per hastighet til perfekt balanse innenfor reglemanget for hver bane.</p>
+                      <br>
+                      <p>Bilen har det mest avanserte suspensjon systemet og setupet vi har noen gang laget som er vannskelig å få rett men vil gi en utfordring og en stor reward om fører finner ut hvordan man skal maksimere packagen.</p>
+                  </div>
+              
+                  <div id="Versjoner" class="tabcontent">
+                      <h2>Versjoner</h2>
+                        <div class="shopVersion">
+                            <p>V3.1 </p>
+                            <button class="versionButton">Last ned</button>
+                            <a class="forandringLogg" href="">Forandrings logg</a>
+                        </div>
+                        <div class="shopVersion">
+                            <p>V3.0 </p>
+                            <button class="versionButton">Last ned</button>
+                            <a class="forandringLogg" href="">Forandrings logg</a>
+                        </div>
+                        <div class="shopVersion">
+                            <p>V2.0 </p>
+                            <button class="versionButton">Last ned</button>
+                            <a class="forandringLogg" href="">Forandrings logg</a>
+                        </div>
+                        <div class="shopVersion">
+                            <p>V1.0 </p>
+                            <button class="versionButton">Last ned</button>
+                            <a class="forandringLogg" href="">Forandrings logg</a>
+                        </div>
+                        
+                  </div>
+            </div>
+        </div>
+    </main>
+	<footer> 			<!-- Normal footer. -->
+		<div class="linking">
+			<div class="footer-navgation make-flex-col">
+				<a href="https://discord.gg/aHHfre3jdg">Discord</a>
+				<a href="">Twitter</a>
+				<a href="">Instagram</a>
+				<a href="">Youtube</a>
+        		<a href="https://twitch.tv/sebeinkro">Twitch</a>
+			</div>
+			<div class="footer-socialhandles make-flex-col">
+				<a href="../faq_contact.html">FAQ og kontakt</a>
+				<a href="../about_us.html">Om oss</a>
+				<a href="">Support</a>
+				<a href="">Terms of Service</a>
+        		<a href="">Cookie policy</a>
+			</div>
+		</div>
+        <p>© 2024 ARC. All rights reserved.</p>
+	</footer>
+</body> 			<!-- JS-->
+<script src="../../src/slikdeShowProdukt.js"></script>
+<script src="../../src/shopTab.js"></script>
+</html>

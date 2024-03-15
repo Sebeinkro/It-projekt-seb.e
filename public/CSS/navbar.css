@@ -1,0 +1,46 @@
+ /*
+    NAVBAR STYLING
+*/
+
+.navbar {
+    width: 100vw;
+    position: fixed;
+
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--accent-color);
+    border: 2px solid var(--secondary-color);
+
+    z-index: 5;
+}
+
+.navbar > * {
+    margin: 0 3em;
+}
+
+.nav-links > ul {
+    gap: 0em;
+}
+
+/*
+    NAVBAR BUTTON STYLING
+*/
+
+.nav-link-button {
+    width: 9rem;
+    height: 4rem;
+
+}
+
+.nav-link-button > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link-button:hover, 
+.nav-link-button:active,
+.nav-link-button:focus {
+    box-shadow: 0 0.03em 0.15em 0.15em var( --secondary-color);
+    transform: translateY(-0.08em);
+}

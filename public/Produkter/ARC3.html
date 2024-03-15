@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt ARC 3 side</title>
+    <link rel="stylesheet" href="../CSS/helperStyles.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/burger.css">
+	<link rel="stylesheet" href="../CSS/footer.css">
+	<link rel="stylesheet" href="../CSS/slideShowProdukt.css">
+</head>
+<body> <!--notater på annen side pga likhet --> 
+ 
+    <div id="navbar" class="navbar make-flex-row">
+        <a class="nav-link-button" href="../index.html">
+            <picture class="hovedLogo">
+                <img loading="lazy" src="../../Assets/ARC_transparent_small.png"  alt="Logo" height="100%" width="100%" min-width="50px" min-height="30px">
+            </picture>
+        </a>
+        <nav class="nav-links" id="nav-menu">
+            <ul class="make-flex-row">
+                <li class="nav-link-button"><a href="../butikk.html">Butikk</a></li>
+                <li class="nav-link-button"><a href="../news.html">Nyheter</a></li>
+                <li class="nav-link-button"><a href="../faq_contact.html">FAQ og kontakt</a></li>
+                <li class="nav-link-button"><a href="../about_us.html">Om oss</a></li>
+                <li class="nav-link-button"><a href="../presentasjon.html">Presentasjon</a></li>
+                
+            </ul>
+        </nav>
+        <div id="menuToggle">
+              <input type="checkbox" />
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="../butikk.html"><li>Butikk</li></a>
+                <a href="../news.html"><li>nyheter</li></a>
+                <a href="../faq_contact.html"><li>FAQ og kontakt</li></a>
+                <a href="../about_us.html"><li>Om oss</li></a>
+                <a href="../presentasjon.html"><li>Presentasjon</li></a>
+              </ul>
+        </div>
+    </div>
+    <main class="shop">
+        <div class="shopPage">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="../../Assets/F3_angle1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="../../Assets/F3_angle2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="../../Assets/F3_angle3.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <div class="produktKjøp">
+                    <h1>ARC 3</h1>
+                    <p>Pris: 30kr</p>
+                    <button class="buy-button">Kjøp</button>
+
+                </div>
+                    <div class="tab">
+                      <button class="tablinks" onclick="openTab(event, 'Spesifications')">Spesifikasjoner</button>
+                      <button class="tablinks" onclick="openTab(event, 'Features')">Features</button>
+                      <button class="tablinks" onclick="openTab(event, 'Versjoner')">Versjoner</button>
+                  </div>
+              
+                  <div id="Spesifications" class="tabcontent">
+                      <h2>Spesifikasjoner</h2>
+                      <br>
+                      <p>ARC 3 var vår første skikkelige mod. Selv om det var den først betyr ikke det at det at den er dårlig. Tvært imot. Dette vil være den beste opplevelsen av å kjøre en Junior klasse ARC bil.</p>
+                      <br>
+                      <p>Chassis: Dallaro ARC 3 19</p>
+                      <p>Vekt: 690kg</p>
+                      <p>Motor: Mechachromo 3.4L V6</p>
+                      <p>Drivstoff: 10% Bio Fuel</p>
+                      <p>Effekt: ~380hk</p>
+                      <p>0-100km/t: 3.0s</p>
+                      <p>Toppfart: 270km/t</p>
+                  </div>
+              
+                  <div id="Features" class="tabcontent">
+                      <h2>Egenskaper</h2>
+                      <br>
+                      <p>Den kommer med 30 liveries med høyeste kvalitet.</p>
+                      <br>
+                      <p>ARC 3 har lyder som er filmet fra virkeligheten. </p>
+                      <br>
+                      <p>ARC 3 har en modell av høyeste kvalitet.</p>
+                      <br>
+                      <p>Den har veldig realistisk setup hvor man kan forandre alt man kan i virkeligheten.</p>
+                      <br>
+                      <p>ARC 3 har DRS som er tuened til å være lik virkeligheten.</p>
+                  </div>
+              
+                  <div id="Versjoner" class="tabcontent">
+                      <h2>Versjoner</h2>
+                        <div class="shopVersion">
+                            <p>V2.2 </p>
+                            <button class="versionButton">Last ned</button>
+                            <a class="forandringLogg" href="">Forandrings logg</a>
+                        </div>
+                        <div class="shopVersion">
+                            <p>V2.0 </p>
+                            <button class="versionButton">Last ned</button>
+                            <a class="forandringLogg" href="">Forandrings logg</a>
+                        </div>
+                        <div class="shopVersion">
+                            <p>V1.0 </p>
+                            <button class="versionButton">Last ned</button>
+                            <a class="forandringLogg" href="">Forandrings logg</a>
+                        </div>
+                        
+                  </div>
+            </div>
+        </div>
+    </main>
+	<footer>
+		<div class="linking">
+			<div class="footer-navgation make-flex-col">
+				<a href="https://discord.gg/aHHfre3jdg">Discord</a>
+				<a href="">Twitter</a>
+				<a href="">Instagram</a>
+				<a href="">Youtube</a>
+        		<a href="https://twitch.tv/sebeinkro">Twitch</a>
+			</div>
+			<div class="footer-socialhandles make-flex-col">
+				<a href="../faq_contact.html">FAQ og kontakt</a>
+				<a href="../about_us.html">Om oss</a>
+				<a href="">Support</a>
+				<a href="">Terms of Service</a>
+        		<a href="">Cookie policy</a>
+			</div>
+		</div>
+        <p>© 2024 ARC. All rights reserved.</p>
+	</footer>
+</body>
+<script src="../../src/slikdeShowProdukt.js"></script>
+<script src="../../src/shopTab.js"></script>
+</html>
